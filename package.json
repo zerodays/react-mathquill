@@ -16,7 +16,8 @@
     "build:example": "npm run build && webpack --mode development --config webpack.examples.js",
     "deploy": "npm run build:example && gh-pages -d examples/dist",
     "prepublish": "rm -rf dist/ && npm run build",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "prepare": "npm run build"
   },
   "dependencies": {},
   "peerDependencies": {
